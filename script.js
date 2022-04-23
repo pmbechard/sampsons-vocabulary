@@ -62,6 +62,8 @@ function winner() {
             button.disabled = true;
         }
     });
+    const root = document.querySelector(':root');
+    root.style.setProperty('--winner', 'visible');
 }
 
 // Game Over
@@ -74,6 +76,8 @@ function gameOver() {
             button.disabled = true;
         }
     });
+    const root = document.querySelector(':root');
+    root.style.setProperty('--loser', 'visible');
 }
 
 // Restart
@@ -84,6 +88,9 @@ function restartGame() {
     hangmanImage.setAttribute('src', `images/${incorrectGuesses}.jpg`);
     const buttons = document.querySelectorAll('.button-grid button');
     buttons.forEach( (button) => button.disabled = false );
+    const root = document.querySelector(':root');
+    root.style.setProperty('--winner', 'hidden');
+    root.style.setProperty('--loser', 'hidden');
 }
 
 
