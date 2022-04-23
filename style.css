@@ -7,6 +7,7 @@
 
     --winner: hidden;
     --loser: hidden;
+    --message-size: 80px;
 }
 
 * {
@@ -93,7 +94,7 @@ header {
 
 .picture-area::before {
     content: "You win!";
-    font-size: 80px;
+    font-size: var(--message-size);
     color: green;
     transform: rotate(-15deg);
     position: absolute;
@@ -102,7 +103,7 @@ header {
 
 .picture-area::after {
     content: "You lose...";
-    font-size: 80px;
+    font-size: var(--message-size);
     color: red;
     transform: rotate(-15deg);
     position: absolute;
@@ -120,6 +121,10 @@ footer {
 
 
 @media screen and (max-width: 450px) {
+    :root {
+        --message-size: 48px;
+    }
+
     h1 {
         font-size: 24px;
     }
