@@ -46,7 +46,7 @@ function checkGuess(letter) {
         updateWordDisplay();
     } else {
         incorrectGuesses += 1;
-        hangmanImage.setAttribute('src', `images/${incorrectGuesses}.jpg`);
+        hangmanImage.setAttribute('src', `images/${incorrectGuesses}.png`);
     }
     if (incorrectGuesses === 7) {
         gameOver();
@@ -85,7 +85,7 @@ function restartGame() {
     incorrectGuesses = 0;
     guesses = [];
     getRandomWord();
-    hangmanImage.setAttribute('src', `images/${incorrectGuesses}.jpg`);
+    hangmanImage.setAttribute('src', `images/${incorrectGuesses}.png`);
     const buttons = document.querySelectorAll('.button-grid button');
     buttons.forEach( (button) => button.disabled = false );
     const root = document.querySelector(':root');
