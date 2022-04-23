@@ -117,3 +117,18 @@ footer {
     height: 2vh;
     font-size: 12px;
 }
+
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    small {
+        font-size: 8px;
+    }
+}
