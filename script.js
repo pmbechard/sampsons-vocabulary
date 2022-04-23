@@ -51,6 +51,9 @@ function checkGuess(letter) {
     if (incorrectGuesses === 7) {
         gameOver();
     }
+    if (guesses.length > 0 && incorrectGuesses === 0) {
+        hangmanImage.setAttribute('src', 'images/blank.png');
+    }
 }
 
 // You Win!
