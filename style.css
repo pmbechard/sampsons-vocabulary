@@ -112,7 +112,7 @@ header {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: var(--dark);
     height: 2vh;
