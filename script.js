@@ -58,7 +58,7 @@ function winner() {
     wordDisplay.style.color = 'green';
     const buttons = document.querySelectorAll('.button-grid button');
     buttons.forEach( (button) => {
-        if (button.textContent !== 'Restart') {
+        if (button.textContent !== 'RESTART') {
             button.disabled = true;
         }
     });
@@ -72,7 +72,7 @@ function gameOver() {
     wordDisplay.textContent = currentWord.toUpperCase();
     const buttons = document.querySelectorAll('.button-grid button');
     buttons.forEach( (button) => {
-        if (button.textContent !== 'Restart') {
+        if (button.textContent !== 'RESTART') {
             button.disabled = true;
         }
     });
@@ -93,8 +93,6 @@ function restartGame() {
     root.style.setProperty('--loser', 'hidden');
 }
 
-
-
 // Create and Place Letter Buttons
 const buttonGrid = document.querySelector('.button-grid');
 for (let i = 0; i < 26; i++) {
@@ -111,10 +109,10 @@ for (let i = 0; i < 26; i++) {
 }
 const restart = document.createElement('button');
 restart.value = 'restart';
-restart.textContent = 'Restart';
+restart.textContent = 'RESTART';
 restart.setAttribute('id', 'button-restart');
 buttonGrid.appendChild(restart);
 restart.style.gridArea = '6 / 2 / 7 / 6';
-restart.style.width = '60vw';
+restart.style.width = '61.5vw';
 
 restart.addEventListener('click', () => restartGame())
