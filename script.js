@@ -1,5 +1,6 @@
 // VOCABULARY WORDS GO HERE
-const wordList = ['balcony', 'bathroom', 'bedroom', 'dining room', 'garage', 'garden', 'hall', 'kitchen', 'living room', 'stairs', 'armchair', 'bath', 'blankets', 'chest of drawers', 'cooker', 'cupboards', 'cushions', 'dishwasher', 'duvet', 'fridge', 'microwave', 'mirror', 'pillow', 'rug', 'sink', 'sofa', 'taps', 'toilet', 'towels', 'wardrobe', 'washing machine'];
+const wordList = ['balcony', 'bathroom', 'bedroom', 'dining room', 'garage', 'garden', 'hall', 'kitchen', 'living room', 'stairs', 'armchair', 'bath', 'blankets', 'chest of drawers', 'cooker', 'cupboards', 'cushions', 'dishwasher', 'duvet', 'fridge', 'microwave', 'mirror', 'pillow', 'rug', 'sink', 'sofa', 'taps', 'toilet', 'towels', 'wardrobe', 'washing machine', 
+                    'custom', 'routine', 'habit', 'attend', 'diet', 'advice', 'knowledge', 'education', 'information'];
 
 // Variables
 let wordDisplay = document.querySelector('.word');
