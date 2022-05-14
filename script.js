@@ -1,6 +1,7 @@
 // VOCABULARY WORDS GO HERE
 const wordList = ['balcony', 'bathroom', 'bedroom', 'dining room', 'garage', 'garden', 'hall', 'kitchen', 'living room', 'stairs', 'armchair', 'bath', 'blankets', 'chest of drawers', 'cooker', 'cupboards', 'cushions', 'dishwasher', 'duvet', 'fridge', 'microwave', 'mirror', 'pillow', 'rug', 'sink', 'sofa', 'taps', 'toilet', 'towels', 'wardrobe', 'washing machine', 
-                    'custom', 'routine', 'habit', 'attend', 'diet', 'advice', 'knowledge', 'education', 'information'];
+                    'custom', 'routine', 'habit', 'attend', 'diet', 'advice', 'knowledge', 'education', 'information',
+                    'scientist', 'unusual', 'modern', 'social media', 'way of life', 'avoid', 'always', 'usually', 'often', 'sometimes', 'occasionally', 'hardly ever', 'never', 'furniture'];
 
 // Variables
 let wordDisplay = document.querySelector('.word');
